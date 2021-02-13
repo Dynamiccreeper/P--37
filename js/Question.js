@@ -8,6 +8,10 @@ constructor(){
     this.question=createElement("h4");
     this.option1=createElement("h4");
     this.option2=createElement("h4");
+    this.a=createButton("1");
+          this.wrong=createElement("h4");
+    this.b=createButton("2");
+          this.rigth=createElement("h4");
 }
 display(){
 
@@ -30,10 +34,20 @@ this.button.hide();
 contestant.name = this.input.value();
 contestantCount+=1;
 contestant.index = contestantCount;
-contestant.update();
-contestant.updateCount(contestantCount);
+contestant.updateName();
+//contestant.updateCount(count);
 
 });
+
+this.a.mousePressed(()=>{
+this.wrong.html("wrong you lose (X_X)");
+this.wrong.position(100,300);
+})
+
+this.b.mousePressed(()=>{
+this.rigth.html("yes You are rigth(O_O)");
+this.rigth.position(100,300)
+})
 
 
 }
