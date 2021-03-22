@@ -54,7 +54,11 @@ this.wrong.position(100,300);
 
 this.b.mousePressed(()=>{
 this.rigth.html("yes You are rigth(O_O)");
-this.rigth.position(100,300)
+this.rigth.position(100,300);
+
+this.wrong.hide();
+this.a.hide();
+this.b.hide();
 
 this.a1=createButton("1");
 this.r1=createElement("h4");
@@ -83,6 +87,7 @@ this.b1.mousePressed(()=>{
 
 this.r1.html("yes You are rigth(O_O)");
 this.r1.position(100,300);
+this.w1.hide();
 
 })
 
@@ -91,4 +96,39 @@ this.r1.position(100,300);
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
